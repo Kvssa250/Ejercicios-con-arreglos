@@ -15,15 +15,6 @@ namespace Ejercicio_1
                 Console.WriteLine($"Escriba el valor no. {i+1}: ");
                 numbers[i] = Convert.ToInt32(Console.ReadLine());
                 Console.Clear();
-                if (i > 0)
-                {
-                    while (numbers[i - 1] == numbers[i])
-                    {
-                        Console.WriteLine($"{numbers[i - 1]} ya esta en la lista, escriba otro numero: ");
-                        numbers[i] = Convert.ToInt32(Console.ReadLine());
-                        Console.Clear();
-                    }
-                }
             }
             while (x < numbers.Length) 
             {
